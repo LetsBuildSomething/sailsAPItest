@@ -12,10 +12,18 @@ in CMD
 
 basic routes for authentication are:
 
-* http://localhost:1337/login
 * http://localhost:1337/signup
+POST request body(key:value):
+1. email : your email
+2. password : password 
+3. confirmPassword : password 
 
-until passing the token in header as the Authentication ------ bearer TOKEN_HERE access won't be granted by the api.
+* http://localhost:1337/login
+POST request body(key:value):
+1. email : your email
+2. password : password 
+
+until passing the login token in header as the Authorization - Bearer LOGIN_TOKEN , access won't be granted by the api.
 
 then simple routes like 
 
